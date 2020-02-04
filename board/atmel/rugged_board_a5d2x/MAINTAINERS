@@ -1,0 +1,6 @@
+RUGGED BOARD A5D2X
+M:	Ganesh Koda <ganesh.k@phytec.in>
+S:	Maintained
+F:	board/atmel/rugged_board_a5d2x/
+F:	include/configs/rugged_board_a5d2x.h
+F:	configs/rugged_board_a5d2x_mmc_defconfig

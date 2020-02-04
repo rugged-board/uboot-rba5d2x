@@ -1,0 +1,15 @@
+if TARGET_RUGGED_BOARD_A5D2X
+
+config SYS_BOARD
+	default "rugged_board_a5d2x"
+
+config SYS_VENDOR
+	default "atmel"
+
+config SYS_SOC
+	default "at91"
+
+config SYS_CONFIG_NAME
+	default "rugged_board_a5d2x"
+
+endif

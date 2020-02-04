@@ -171,6 +171,19 @@ config TARGET_SAMA5D27_SOM1_EK
 	  processor-based SAMA5D2 MPU with up to 1 Gbit DDR2-SDRAM
 	  in a single package.
 
+config TARGET_RUGGED_BOARD_A5D2X
+	bool "RUGGED BOARD A5D2X board"
+	select CPU_V7A
+	select SUPPORT_SPL
+	select BOARD_EARLY_INIT_F
+	select BOARD_LATE_INIT
+	help
+	  The RUGGED BOARD A5D2x embeds SAMA5D2 SiP(System in Package),
+	  a 32Mbit QSPI flash, KSZ8081 Phy and a Mac-address EEPROM
+	  24AA02E48. The SAMA5D2 SiP integrates the ARM Cortex-A5
+	  processor-based SAMA5D2 MPU with up to 64MB DDR2-SDRAM
+	  in a single package.
+
 config TARGET_SAMA5D2_ICP
 	bool "SAMA5D2 Industrial Connectivity Platform (ICP)"
 	select CPU_V7A
@@ -279,6 +292,7 @@ source "board/atmel/at91sam9x5ek/Kconfig"
 source "board/atmel/sama5d2_ptc_ek/Kconfig"
 source "board/atmel/sama5d2_xplained/Kconfig"
 source "board/atmel/sama5d27_som1_ek/Kconfig"
+source "board/atmel/rugged_board_a5d2x/Kconfig"
 source "board/atmel/sama5d2_icp/Kconfig"
 source "board/atmel/sama5d3_xplained/Kconfig"
 source "board/atmel/sama5d3xek/Kconfig"
