@@ -41,7 +41,7 @@
 /* u-boot env in sd/mmc card */
 #define CONFIG_ENV_SIZE		0x4000
 /* bootstrap + u-boot + env in sd card */
-#define CONFIG_BOOTCOMMAND	"fatload mmc " CONFIG_ENV_FAT_DEVICE_AND_PART " 0x21000000 rugged-board-a5d2x.dtb; " \
+#define CONFIG_BOOTCOMMAND	"fatload mmc " CONFIG_ENV_FAT_DEVICE_AND_PART " 0x21000000 a5d2x-rugged_board.dtb; " \
 				"fatload mmc " CONFIG_ENV_FAT_DEVICE_AND_PART " 0x22000000 zImage; " \
 				"bootz 0x22000000 - 0x21000000"
 #endif
