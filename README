@@ -76,7 +76,7 @@ How to compile the source code:
 
 Boot from NOR flash:
 ********************
-git clone git@github.com:rugged-board/uboot-rba5d2x.git
+git clone https://github.com/rugged-board/uboot-rba5d2x.git
 cd uboot-rba5d2x
 git checkout origin/uboot-rba5d2x
 make rugged_board_a5d2x_qspiflash_defconfig
@@ -84,7 +84,7 @@ make
 
 Boot from SDCard:
 *****************
-git clone git@github.com:rugged-board/uboot-rba5d2x.git
+git clone https://github.com/rugged-board/uboot-rba5d2x.git
 cd uboot-rba5d2x
 git checkout origin/uboot-rba5d2x
 make rugged_board_a5d2x_mmc1_defconfig
