@@ -1,2 +1,2 @@
-bootcmd=run bootargs; sf probe; sf read 0x22000000 0xA6000 0x500000; sf read 0x21000000 0x96000 0x10000; bootz 0x22000000 - 0x21000000
+bootcmd=run bootargs; sf probe; sf read 0x22000000 0xB0000 0x500000; sf read 0x21000000 0xA0000 0x10000; bootz 0x22000000 - 0x21000000
 bootargs=console=ttyS0,115200 earlyprintk root=/dev/mtdblock5 rw rootwait rootfstype=squashfs

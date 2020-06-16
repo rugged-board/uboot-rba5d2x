@@ -77,32 +77,37 @@
 
 					at91bootstrap@00000000 {
 						label = "at91bootstrap";
-						reg = <0x00000000 0x00006000>;
+						reg = <0x00000000 0x00010000>;
 					};
 
-					bootloaderenv@00006000 {
+					bootloaderenv@00010000 {
 						label = "bootloaderenv";
-						reg = <0x00006000 0x00010000>;
+						reg = <0x00010000 0x00010000>;
 					};
 
-					bootloader@00016000 {
+					bootloader@00020000 {
 						label = "bootloader";
-						reg = <0x00016000 0x00080000>;
+						reg = <0x00020000 0x00080000>;
 					};
 
-					dtb@00096000 {
+					dtb@000A0000 {
 						label = "devicetree";
-						reg = <0x00096000 0x00010000>;
+						reg = <0x000A0000 0x00010000>;
 					};
 
-					kernel@000A6000 {
+					kernel@000B0000 {
 						label = "kernel";
-						reg = <0x000A6000 0x00500000>;
+						reg = <0x000B0000 0x00500000>;
 					};
 
-					rootfs@005A6000 {
+					rootfs@005B0000 {
 						label = "rootfs";
-						reg = <0x005A6000 0x0>;
+						reg = <0x005B0000 0x01400000>;
+					};
+
+					data@019B0000 {
+                                                label = "data";
+                                                reg = <0x019B0000 0x0>;
 					};
 				};
 			};
