@@ -106,8 +106,8 @@
 					};
 
 					data@019B0000 {
-                                                label = "data";
-                                                reg = <0x019B0000 0x0>;
+						label = "data";
+						reg = <0x019B0000 0x0>;
 					};
 				};
 			};
